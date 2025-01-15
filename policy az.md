@@ -72,7 +72,7 @@ add-created-on-date
         "details": [
           {
             "field": "tags['CreatedOnDate']",
-            "value": "[utcNow()]"
+            "value": "[concat(substring(utcNow(), 0, 19), 'Z')]"
           }
         ]
       }
